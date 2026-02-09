@@ -1,0 +1,189 @@
+Git & GitHub
+
+Git
+Git is a version control system.
+It is a tool that helps to track changes in code.
+
+ 
+
+Version Control
+We can say that it tracks or maintains history
+When we add, delete, or update
+GitHub
+
+Where can we store our code
+Repository
+Project folder
+code + file + history
+
+README
+This is an introduction file of project
+
+Contains:
+project name
+description
+usage
+features
+use HTML
+Git Workflow
+
+Edit code
+↓
+git add
+↓
+git commit
+↓
+git push
+
+*GitHub Actions Core CI/CD
+
+What is CI vs CD
+What’s flow structure
+.github/workflows/*.yml
+on: push
+branches: develop / master
+Jobs & steps
+action
+action checkout
+setup-node
+secrets
+repo → settings → secrets → actions
+develop.yml
+
+
+master.yml
+
+*SSH Deployment from GitHub Actions
+
+This connect GitHub → EC2
+SSH via GitHub action
+Using secrets for keys
+Run remote command
+Pull latest code on EC2
+Restart app
+Merge to master = auto deploy
+*Git & GitHub
+
+Git Basics
+2. clone
+3. add
+4. commit
+5. push
+6. pull
+
+Branching
+develop
+master
+merge vs rebase
+Linux + SSH
+
+*Linux commands
+
+ls
+cd
+pwd
+cp
+mv
+rm
+Process Management
+
+ps
+top
+pm2
+systemctl
+*AWS EC2 (Deployment Base)
+
+Create EC2 Instance
+OS: Ubuntu
+
+Instance type: t2.micro / t3.micro
+
+Create key pair (.pem)
+
+Security Group
+Port 22 (SSH)
+
+Port 8080
+
+Port 80 (HTTP)
+
+Port 443 (HTTPS)
+
+Connect to EC2 via SSH
+ssh -i key.pem ubuntu@EC2-public-IP
+
+Update server & install required software
+sudo apt update
+
+sudo apt install git nginx -y
+
+Install node.js / python (project requirement)
+
+Install PM2 for process management
+
+Clone project from GitHub
+git clone https://github.com/....
+
+cd repo-name
+
+Configure Environment Variable
+Create .env file
+PORT
+
+DATABASE_URL
+
+JWT_SECRET
+
+API_KEYS
+
+Install Dependency & Run Backend
+npm install
+
+npm run build
+
+pm2 start index.js --name repo-name
+
+pm2 save
+
+npm install
+It use to install all dependencies from package.json
+
+npm run build
+Production-ready build तयार करते
+
+pm2 start
+Backend app background run करते
+
+Use Database Setup
+Use AWS RDS
+
+MySQL / PostgreSQL
+
+Frontend Build & Deploy
+npm run build
+
+Configure Nginx as Reverse Proxy
+Edit config
+
+sudo nano /etc/nginx/sites-available/default
+
+Route frontend & backend
+
+Restart nginx
+
+sudo systemctl restart nginx
+
+Domain & SSL Configuration
+Map domain → EC2 public IP (hosting)
+
+Install SSL
+
+sudo certbot --nginx
+
+Verify Deployment
+HTTP : EC2-Public-IP
+
+HTTPS : domain name
+
+Check backend:
+pm2 status
