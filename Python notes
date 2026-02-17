@@ -1,0 +1,298 @@
+1.Python Introduction
+
+What is Python?
+
+Features of Python
+
+Python vs other languages
+
+Interpreted vs Compiled
+
+Installing Python
+
+Running Python script
+
+Python REPL
+
+2️. Variables & Data Types
+
+Variables
+
+Naming rules
+
+Data Types:
+
+int
+
+float
+
+str
+
+bool
+
+complex
+
+Type casting
+
+type() function
+
+id() function
+
+3️. Operators
+
+Arithmetic operators
+
+Comparison operators
+
+Logical operators
+
+Assignment operators
+
+Identity operators (is, is not)
+
+Membership operators (in, not in)
+
+Bitwise operators (basic idea)
+
+4️. Input & Output
+
+input()
+
+print()
+
+Formatting strings:
+
+f-strings
+
+format()
+
+% formatting
+
+5️. Control Statements
+
+if
+
+if-else
+
+elif
+
+Nested if
+
+for loop
+
+while loop
+
+break
+
+continue
+
+pass
+
+6️. Data Structures (Very Important 🔥)
+🔹 Strings
+
+String methods
+
+Indexing
+
+Slicing
+
+Immutability
+
+🔹 Lists
+
+Creating list
+
+List methods
+
+Indexing
+
+Slicing
+
+List comprehension
+
+Nested lists
+
+🔹 Tuples
+
+Tuple methods
+
+Immutable concept
+
+🔹 Sets
+
+Set operations
+
+Union
+
+Intersection
+
+Difference
+
+🔹 Dictionary
+
+Key-value pairs
+
+Dictionary methods
+
+Looping dictionary
+
+Nested dictionary
+
+7️⃣ Functions
+
+Defining function
+
+Parameters & Arguments
+
+Return statement
+
+Default arguments
+
+Keyword arguments
+
+*args
+
+**kwargs
+
+Lambda function
+
+Recursion
+
+8️. Exception Handling
+
+try
+
+except
+
+else
+
+finally
+
+Multiple exceptions
+
+Custom exception
+
+9️. File Handling
+
+open()
+
+Modes (r, w, a)
+
+Read file
+
+Write file
+
+With statement
+
+JSON file handling
+
+CSV file handling
+
+10. OOP (Interview Must 🔥)
+
+Class
+
+Object
+
+init constructor
+
+Instance variable
+
+Class variable
+
+Instance method
+
+Class method
+
+Static method
+
+Inheritance
+
+Method overriding
+
+Polymorphism
+
+Encapsulation
+
+Abstraction
+
+Magic methods
+
+1️1. Modules & Packages
+
+import
+
+from import
+
+Creating own module
+
+name == "main"
+
+pip
+
+Virtual environment (venv)
+
+12. Important Built-in Modules
+
+os
+
+sys
+
+math
+
+datetime
+
+random
+
+logging
+
+subprocess
+
+13. Advanced Concepts (Interview Level)
+
+List comprehension (deep)
+
+Dictionary comprehension
+
+Generators
+
+Iterators
+
+Decorators
+
+Shallow copy vs Deep copy
+
+Mutable vs Immutable
+
+Memory management (basic idea)
+
+GIL (basic idea)
+
+Multithreading (basic idea)
+
+14. API Handling
+
+requests library
+
+GET request
+
+POST request
+
+JSON response handling
+
+15. Python for DevOps (Tuzya Profile sathi 🔥)
+
+Running shell commands
+
+Cron jobs
+
+Scheduler (APScheduler)
+
+boto3 (AWS SDK)
+
+EC2 start/stop script
+
+S3 upload script
+
+Log monitoring script
